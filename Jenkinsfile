@@ -6,11 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/santhoshannadurai6256-dotcom/tomcat-ansible-jenkins.git'
-            }
-        }
 
         stage('Build WAR') {
             steps {
