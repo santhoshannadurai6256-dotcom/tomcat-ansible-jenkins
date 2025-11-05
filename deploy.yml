@@ -1,0 +1,6 @@
+---
+- hosts: tomcat
+  become: yes
+  roles:
+    - tomcat_deploy
+

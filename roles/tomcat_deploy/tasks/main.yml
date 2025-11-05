@@ -1,0 +1,18 @@
+---
+- name: Stop Tomcat
+  command: /opt/tomcat9/bin/shutdown.sh
+  ignore_errors: yes
+
+- name: Delete old WAR
+  file:
+    path: /opt/tomcat9/webapps/sample.war
+    state: absent
+
+- name: Copy new WAR
+  copy:
+    src: sample.war
+    dest: /opt/tomcat9/webapps/sample.war
+
+- name: Start Tomcat
+  command: /opt/tomcat9/bin/startup.sh
+
