@@ -1,4 +1,4 @@
-project document for r CI/CD Pipeline using Jenkins + Maven + GitHub + Ansible + Tomcat.
+project document for r  CI/CD Pipeline using Jenkins + Maven + GitHub + Ansible + Tomcat.
 
 This includes EVERY STEP from EC2 setup → Jenkins → Maven → GitHub → Ansible → Tomcat → CI/CD pipeline execution.
 ________________________________________
